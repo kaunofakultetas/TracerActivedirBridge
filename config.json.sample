@@ -1,0 +1,16 @@
+{
+    "tracer": {
+        "tracerActivedirBridgeUrl": "http://your-tracer-server:800/api/bridge/activedir",
+        "tracerActivedirBridgeApi": "YOUR_API_KEY_HERE"
+    },
+    "activedir": {
+        "domain": "corp.example.com",
+        "baseDn": "DC=corp,DC=example,DC=com",
+        "groupPaths": {
+            "default": "OU=Groups,OU=Organization",
+            "IT-*": "OU=IT,OU=Departments",
+            "HR-*": "OU=HR,OU=Departments",
+            "Finance-*": "OU=Finance,OU=Departments"
+        }
+    }
+}
