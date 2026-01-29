@@ -2,6 +2,8 @@
 
 A lightweight Python service that bridges Active Directory with the Tracer system. It runs as a scheduled task on a Windows server, queries AD for user and group information upon request from Tracer, and sends the data back.
 
+</br>
+
 ## Overview
 
 ```
@@ -10,6 +12,8 @@ A lightweight Python service that bridges Active Directory with the Tracer syste
 │     (API)       │   HTTP  │     (This Service)       │   AD    │     Server      │
 └─────────────────┘         └──────────────────────────┘         └─────────────────┘
 ```
+
+</br>
 
 ## Features
 
@@ -25,11 +29,15 @@ A lightweight Python service that bridges Active Directory with the Tracer syste
 
 - **API-Driven**: Responds to requests from Tracer system - only fetches data that Tracer needs
 
+</br>
+
 ## Requirements
 
 - Python 3.11+
 - Windows Server with Active Directory access
 - Network access to Tracer API endpoint
+
+</br>
 
 ## Dependencies
 
@@ -37,6 +45,8 @@ A lightweight Python service that bridges Active Directory with the Tracer syste
 requests
 pyad
 ```
+
+</br>
 
 ## Installation
 
@@ -86,6 +96,8 @@ pyad
    4. Enter your domain credentials when prompted
    
    The account must have AD read permissions.
+
+</br>
 
 ## Configuration
 
@@ -138,6 +150,8 @@ The `groupPaths` configuration supports flexible mapping of AD groups to their O
 
 Example: `CN=IT-Support,OU=IT,OU=Departments,DC=corp,DC=example,DC=com`
 
+</br>
+
 ## Usage
 
 ### Manual Execution
@@ -153,6 +167,8 @@ The included `TracerActivedirBridge.xml` configures a Windows scheduled task wit
 - **Execution timeout**: 30 minutes
 - **Restart on failure**: 3 retries with 1-minute intervals
 - **Run level**: Highest available privileges
+
+</br>
 
 ## How It Works
 
@@ -198,6 +214,8 @@ The included `TracerActivedirBridge.xml` configures a Windows scheduled task wit
 }
 ```
 
+</br>
+
 ## File Structure
 
 ```
@@ -208,6 +226,8 @@ TracerActivedirBridge/
 ├── config.json.sample          # Configuration template
 └── README.md                   # This file
 ```
+
+</br>
 
 ## Troubleshooting
 
